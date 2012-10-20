@@ -1,4 +1,8 @@
 #!/bin/bash
+set +x
+
+# Install homebrew if it doesn't exist
+which -s brew || /usr/bin/ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -17,30 +21,37 @@ brew install bash
 # Install wget with IRI support
 brew install wget --enable-iri
 
-# Install RingoJS and Narwhal
-# Note that the order in which these are installed is important; see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
-brew tap josegonzalez/homebrew-php
-brew install php54
-
-# These two formulae didn’t work well last time I tried them:
-#brew install homebrew/dupes/vim
-#brew install homebrew/dupes/screen
 
 # Install everything else
 brew install ack
-#brew install exiv2
+brew install apple-gcc42
+brew install elasticsearch
+brew install exiv2
+brew install freetype
+brew install gecode
 brew install git
-#brew install imagemagick
+brew install graphiz
+brew install hub
+brew install imagemagick
 brew install lynx
+brew install memcached
+brew install mongodb
+brew install mysql
+brew install ngrep
 brew install node
+brew install postgresql
+brew install rabbitmq
+brew install redis
 brew install rename
 brew install rhino
+brew install riak
+brew install solr
+brew install sphinx
+brew install sqlite
+brew install tcpdump
 brew install tree
 brew install webkit2png
 

@@ -1,0 +1,16 @@
+#!/bin/bash
+set +x
+
+# Install RVM
+echo 'Installing RVM...'
+  \curl -L https://get.rvm.io | bash -s stable
+
+echo 'Installing Ruby 1.9.3...'
+  rvm install 1.9.3
+  rvm reload
+  rvm use 1.9.3 --default
+
+echo 'Installing default gems...'
+  rvm use @global
+  gem update --system
+  gem install awesome_print bundler builder gemcutter heroku hirb rake wirble

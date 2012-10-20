@@ -1,0 +1,8 @@
+# Amazon AWS stuff
+export EC2_HOME=~/.aws/ec2
+export AWS_IAM_HOME=~/.aws/iam
+export PATH=$PATH:$EC2_HOME/bin:$AWS_IAM_HOME/bin
+export EC2_PRIVATE_KEY=$EC2_HOME/x509/ciaws_pk_username.pem
+export EC2_CERT=$EC2_HOME/x509/ciaws_pc_username.pem
+export AWS_CREDENTIAL_FILE=$AWS_IAM_HOME/aws-credential
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
