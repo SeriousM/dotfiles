@@ -7,7 +7,7 @@ Installation
 *Warning:* This will overwrite existing files!
 
 ```bash
-cd; curl -#L https://github.com/mathiasbynens/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh}
+cd; curl -#L https://github.com/sethvargo/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md}
 ```
 
 You can run that command to update when needed.
