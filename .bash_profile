@@ -52,5 +52,8 @@ export PS1='\[\e[0;35m\]\u@\h: \[\e[0;34m\]\w\[\e[0;32m\]$(__git_ps1):\[\e[m\] '
 # editor
 export EDITOR="s -w"
 
+# AWS
+[ -f ~/.awsrc ] && source ~/.awsrc
+
 # Load Aliases
 [ -f ~/.bash_aliases ] && source ~/.bash_aliases
